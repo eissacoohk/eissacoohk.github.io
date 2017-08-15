@@ -3,7 +3,7 @@
 body {background-color: black;
 } 
 h1 {color:#FFCE00;
-	font-family: Raleway;
+	font-family: "Raleway", serif;
 	font-size: 14px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -12,20 +12,20 @@ h1 {color:#FFCE00;
 	padding-bottom: 20px;
 	}
 h2 {color:#FFCE00;
-	font-family: Raleway;
+	font-family: "Raleway", serif;
 	font-size: 12px;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 0.3em;
 	}
 h3 {color:#fff;
-	font-family: Raleway;
+	font-family: "Raleway", serif;
 	font-size: 12px;
 	font-style: italic;
 	letter-spacing: 0.3em;
 	}
 p {	color:#fff;
-	font-family: Raleway;
+	font-family: "Raleway", serif;
 	font-size: 12px;
 	font-weight: medium;
 	text-transform: none;
@@ -43,7 +43,7 @@ p {	color:#fff;
     padding: 8px 16px;
     text-align: center;
     text-transform: uppercase;
-    font-family: Raleway;
+    font-family: "Raleway", serif;
     font-size: 12px;
     letter-spacing: 0.1em;
     font-weight: bold;
@@ -58,7 +58,7 @@ p {	color:#fff;
     padding: 8px 16px;
     text-align: center;
     text-transform: uppercase;
-    font-family: Raleway;
+    font-family: "Raleway", serif;
     font-size: 12px;
     letter-spacing: 0.1em;
     font-weight: bold;
@@ -76,16 +76,13 @@ p {	color:#fff;
 
 
 /* Navigation */
+
 .navbar {
-	padding-top: 30px;
+	display: none;
 }
 
 .bg-dark {
     background-color: black!important;
-}
-
-.navbar-collapse.collapse.show {
-    background-color: #FFCE00!important;
 }
 
 .nav-link {
@@ -94,9 +91,59 @@ p {	color:#fff;
 	font-weight: bold;
 }
 
+/* Navigation Mobile */
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: #FFCE00;
+    overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 4d0px; 
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 50px;
+    font-weight: bold;
+    color: black;
+    display: block; /* Display block instead of inline */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+
+
 /* Logo */
 .CK-link {
-	padding-left: 10px;
+	padding-left: 20px;
 }
 
 /* Video */
@@ -155,19 +202,6 @@ s
 	.top-pad {
 		padding-top: 250px;
 	}
-		.bg-dark {
-    	background-color: black!important;
-	}
-}
-
-/* large */
-@media (min-width: 992px) {
-	.top-pad {
-		padding-top: 300px;
-	}
-	.pad {
-		padding-left: 120px;
-	}
 	.bg-dark {
     	background-color: black!important;
 	}
@@ -184,11 +218,37 @@ s
 		letter-spacing: 0.2em;
 	}
 	.navbar {
-		padding-top: 30px;
-		padding-right: 80px;
+		display: inline;
+		text-align: right;
+	}
+	ul { 
+		list-style-type: none; 
+		text-align:right; 
+		margin:0 auto; 
+		padding-top: 12px;
+		padding-right: 30px; 
+		display:inline; 
+		overflow:hidden; 
+		list-style-type: none;
+	}   
+	.menubutton {
+		display: none;
+	}
+}
+
+/* large */
+@media (min-width: 992px) {
+	.top-pad {
+		padding-top: 300px;
+	}
+	.pad {
+		padding-left: 120px;
 	}
 	.CK-link {
 		padding-left: 70px;
+	}
+	ul { 
+		padding-right: 70px; 
 	}
 }
 
@@ -197,5 +257,9 @@ s
 	.top-pad {
 		padding-top: 300px;
 	}
+		ul { 
+		padding-right: 100px; 
+	}
+
 }
 
