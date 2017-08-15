@@ -182,7 +182,16 @@ p {	color:#fff;
 	z-index: 990;
 	background-color:#FFCE00;
 }
-s
+
+.container2 {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.container-fluid {
+	margin-bottom: 100px;
+}
+
 /* small */
 @media (min-width: 576px) {
 	.top-pad {
