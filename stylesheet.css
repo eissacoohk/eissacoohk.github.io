@@ -79,6 +79,7 @@ p {	color:#fff;
 
 .navbar {
 	display: none;
+	position: initial;
 }
 
 .bg-dark {
@@ -139,8 +140,6 @@ p {	color:#fff;
     font-size: 60px;
 }
 
-
-
 /* Logo */
 .CK-link {
 	padding-left: 40px;
@@ -195,6 +194,9 @@ s
 	.CK-link {
 		padding-left: 50px;
 	}
+	.navbar {
+		display: flex;
+	}
 }
 
 /* medium */
@@ -217,22 +219,11 @@ s
 		font-weight: 500;
 		letter-spacing: 0.2em;
 	}
-	.navbar {
-		display: inline;
-		text-align: right;
-	}
-	ul { 
-		list-style-type: none; 
-		text-align:right; 
-		margin:0 auto; 
-		padding-top: 12px;
-		padding-right: 30px; 
-		display:inline; 
-		overflow:hidden; 
-		list-style-type: none;
-	}   
 	.menubutton {
 		display: none;
+	}
+	.navbar {
+		display: flex;
 	}
 }
 
