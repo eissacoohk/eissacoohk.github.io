@@ -187,20 +187,20 @@ s
 /* small */
 @media (min-width: 576px) {
 	.top-pad {
-		padding-top: 250px;
+		padding-top: 160px;
 	}
 	.pad {
 		padding-left: 70px;
 	}
 	.CK-link {
-		padding-left: 30px;
+		padding-left: 50px;
 	}
 }
 
 /* medium */
 @media (min-width: 768px) {
 	.top-pad {
-		padding-top: 250px;
+		padding-top: 160px;
 	}
 	.bg-dark {
     	background-color: black!important;
@@ -239,13 +239,13 @@ s
 /* large */
 @media (min-width: 992px) {
 	.top-pad {
-		padding-top: 300px;
+		padding-top: 200px;
 	}
 	.pad {
 		padding-left: 120px;
 	}
 	.CK-link {
-		padding-left: 70px;
+		padding-left: 90px;
 	}
 	ul { 
 		padding-right: 70px; 
@@ -255,7 +255,7 @@ s
 /* extra large */
 @media (min-width: 1200px) {
 	.top-pad {
-		padding-top: 300px;
+		padding-top: 200px;
 	}
 		ul { 
 		padding-right: 100px; 
